@@ -1,0 +1,15 @@
+:root{
+  --color-primary:#02eeff;
+  --color-primary-variant:#5ddce5;
+  --color-bg-1:#001517;
+  --color-bg-2:#00282d;
+  --color-bg-3:#012e34;
+  --color-bg-4:#003f47;
+  --color-light:#85afb2;
+  --color-white:#e6e6e6;
+
+  --container-width-lg: 88%;
+  --container-width-md: 92%;
+
+  --transition: all 0.3s ease-in-out;
+}
