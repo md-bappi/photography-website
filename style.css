@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
 :root{
   --color-primary:#02eeff;
   --color-primary-variant:#5ddce5;
@@ -12,4 +14,135 @@
   --container-width-md: 92%;
 
   --transition: all 0.3s ease-in-out;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  border:0;
+  outline:0;
+  list-style: none;
+  text-decoration:none;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  background-color:var(--color-bg-3);
+  color:var(--color-light);
+  overflow-x:hidden;
+}
+
+h1{
+  color:var(--color-white);
+}
+
+a{
+  color:var(--color-light);
+  transition: var(--transition);
+}
+
+a:hover{
+  color:var(--color-primary);
+}
+
+.container{
+  width:var(--container-width-lg);
+  margin:0 auto;
+  max-width:2160px;
+}
+img{
+  display: block;
+  width:100%;
+  object-fit:cover;
+}
+/* ================= NAV START=================== */
+nav{
+  width:100vw;
+  height:calc( 16px * 4);
+  background-color: var(--color-bg-2);
+  /* display: flex;
+  justify-content: center;
+  align-items:center; */
+  display: grid;
+  place-items: center;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:99;
+  border-bottom: 0.2rem solid var(--color-bg-3);
+  box-shadow: 0 0.2rem 0.7rem rgba(0 0 0 / 0.1);
+}
+
+.nav-container{
+  height:100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo{
+  text-transform: uppercase;
+  color:var(--color-primary-variant);
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.nav-links{
+  display: flex;
+  gap:3rem;
+}
+
+.nav-socials{
+  display:flex;
+  gap:2rem;
+}
+
+.nav-socials a{
+  width:2rem;
+  height:2rem;
+  display: grid;
+  place-items:center;
+  background-image: linear-gradient(var(--color-primary-variant) , var(--color-primary));
+  border-radius: 0.2rem;
+  color:var(--color-bg-4);
+  transition:var(--transition);
+}
+
+.nav-socials a:hover{
+  box-shadow: 0 0.6rem 1rem rgba(0 0 0 / 0.3);
+}
+
+/* =======================HEADER================= */
+
+header{
+  width:100vw;
+  height:100vh;
+  position:relative;
+  top:0;
+  background-image:linear-gradient( ver(--color-bg-3) , v);
+}
+
+/* 
+.header-container{
+  display:flex;
+  gap:10%;
+}
+
+.header-left{
+  flex-basis:50%;
+}
+
+.header-right{
+  flex-basis:40%;
+} */
+
+.header-container{
+  display:grid;
+  grid-template-columns:53% 43%;
+  gap:4%;
 }
