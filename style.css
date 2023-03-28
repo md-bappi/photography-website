@@ -343,3 +343,38 @@ header{
 .about-btn{
   margin-top:1rem;
 }
+
+/* ====================GALLERY================== */
+
+
+#gallery{
+  margin-top:10rem;
+}
+
+.gallery-head h2{
+  margin-bottom:2rem;
+}
+
+.gallery-head p{
+  width:50%;
+  margin-bottom:3rem;
+}
+
+.gallery-images{
+  display:grid;
+  /* grid-template-columns:1fr 1fr 1fr; */ 
+  grid-template-columns: repeat(3, 1fr); /* 1fr = 1 fraction */
+  gap:4rem;
+  place-items:center;
+}
+
+.gallery-image{
+  width:22.4rem;
+  border:0.5rem solid var(--color-bg-4);
+  filter:saturate(0) brightness(0.5);
+  transition:var(--transition);
+}
+
+.gallery-image:hover{
+  filter: saturate(1) brightness(1);
+}
